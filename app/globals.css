@@ -1,64 +1,11 @@
 @import "tailwindcss";
 
-/* Design Credit - QuantaFONS Style */
 
-.design-credit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: nowrap;
-    font-size: 14.5px;
-    color: #94a3b8;
-    font-weight: 400;
-    font-family: 'Poppins', 'Inter', sans-serif;
-    margin-top: 20px;
-    animation: fadeIn 0.5s ease-in-out;
+@keyframes subtle-fade {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-
-.design-logo {
-    height: 20px;
-    width: auto;
-    min-width: 0;
-    margin-inline: 0 2px;
-    object-fit: contain;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    transform: translateZ(0);
-    display: inline-block;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
-}
-@media (min-width: 640px) {
-    .design-logo { height: 24px; }
-}
-@media (min-width: 1024px) {
-    .design-logo { height: 28px; }
-}
-
-.design-logo:hover {
-    transform: scale(1.05);
-}
-
-.design-credit a {
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.design-credit a:hover {
-    color: #bfdbfe;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.animate-subtle-fade {
+  animation: subtle-fade 0.6s ease-out forwards;
 }

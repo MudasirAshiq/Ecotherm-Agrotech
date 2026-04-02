@@ -462,23 +462,35 @@ export default function Page() {
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>&copy; {new Date().getFullYear()} Ecotherm Agrotech. All rights reserved.</p>
-            <p>Patent Pending &bull; Trademark Applied</p>
+          <div className="pt-8 border-t border-stone-800 flex flex-col items-center gap-6 text-sm text-center">
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-stone-500">
+              <p>&copy; {new Date().getFullYear()} Ecotherm Agrotech. All rights reserved.</p>
+              <p className="hidden md:block text-stone-700">|</p>
+              <p>Patent Pending &bull; Trademark Applied</p>
+            </div>
+            
+            <div className="flex items-center gap-2 text-stone-500 opacity-0 animate-subtle-fade" style={{ animationDelay: '0.2s' }}>
+              <span className="text-white text-xs font-medium">Designed by</span>
+              <a 
+                href="https://www.quantafons.in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 group bg-stone-800/40 hover:bg-stone-800 px-3 py-1.5 rounded-full transition-all border border-stone-800 hover:border-stone-700"
+              >
+                <div className="bg-white p-1 rounded-full overflow-hidden flex items-center justify-center h-6 w-6">
+                  <Image
+                    src="/images/quantafons_logo.jpg"
+                    alt="QuantaFons Logo"
+                    width={20}
+                    height={10}
+                    className="object-contain"
+                  />
+                </div>
+                <span className="font-bold text-stone-300 group-hover:text-emerald-400 transition-colors text-xs">QuantaFons</span>
+              </a>
+            </div>
           </div>
         </div>
-        <p className="design-credit">
-          <span>Designed by</span>
-          <Image
-            src="/images/quantafons_logo.jpg"
-            alt="QuantaFONS Logo"
-            width={70}
-            height={22}
-            priority
-            className="design-logo"
-          />
-          <a href="https://www.quantafons.com" target="_blank" rel="noopener noreferrer">QuantaFONS</a>
-        </p>
       </footer>
     </div>
   );
