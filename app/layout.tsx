@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: 'Ecotherm Agrotech',
   description: 'My Google AI Studio App',
   icons: {
-    icon: '/ECOTHERM.svg',
-    apple: '/ECOTHERM.svg',
+    icon: '/ECOTHERMFAVI.png',
+    apple: '/ECOTHERMFAVI.png',
   },
 };
 

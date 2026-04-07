@@ -462,33 +462,22 @@ export default function Page() {
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-stone-800 flex flex-col items-center gap-6 text-sm text-center">
+          <div className="pt-8 border-t border-stone-800 flex flex-col md:flex-row items-center justify-between gap-8 text-sm">
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-stone-500">
               <p>&copy; {new Date().getFullYear()} Ecotherm Agrotech. All rights reserved.</p>
               <p className="hidden md:block text-stone-700">|</p>
               <p>Patent Pending &bull; Trademark Applied</p>
             </div>
             
-            <div className="flex items-center gap-2 text-stone-500 opacity-0 animate-subtle-fade" style={{ animationDelay: '0.2s' }}>
-              <span className="text-white text-xs font-medium">Designed by</span>
-              <a 
-                href="https://www.quantafons.in/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 group bg-stone-800/40 hover:bg-stone-800 px-3 py-1.5 rounded-full transition-all border border-stone-800 hover:border-stone-700"
-              >
-                <div className="bg-white p-1 rounded-full overflow-hidden flex items-center justify-center h-6 w-6">
-                  <Image
-                    src="/images/quantafons_logo.jpg"
-                    alt="QuantaFons Logo"
-                    width={20}
-                    height={10}
-                    className="object-contain"
-                  />
+            <div className="mt-8 md:mt-0 flex items-center justify-center md:justify-end gap-3 group/credits">
+              <span className="text-stone-500 font-medium text-xs tracking-wide">DESIGNED BY</span>
+              <div className="flex items-center gap-2.5 px-4 py-2 bg-stone-800/50 border border-stone-700/50 rounded-full hover:bg-stone-800 hover:border-emerald-500/30 transition-all duration-300 group/ds">
+                <div className="w-6 h-6 bg-emerald-600 rounded-lg flex items-center justify-center transform group-hover/ds:rotate-12 transition-transform duration-300">
+                  <span className="text-white font-bold text-[10px] tracking-tighter">DS</span>
                 </div>
-                <span className="font-bold text-stone-300 group-hover:text-emerald-400 transition-colors text-xs">QuantaFons</span>
-              </a>
-            </div>
+                <span className="text-stone-200 font-bold text-sm tracking-tight group-hover/ds:text-emerald-400 transition-colors duration-300">DesArt Social</span>
+              </div>
+            </div> 
           </div>
         </div>
       </footer>
