@@ -470,14 +470,16 @@ export default function Page() {
             </div>
             
             <div className="mt-8 md:mt-0 flex items-center justify-center md:justify-end gap-3 group/credits">
-              <span className="text-stone-500 font-medium text-xs tracking-wide">DESIGNED BY</span>
-              <div className="flex items-center gap-2.5 px-4 py-2 bg-stone-800/50 border border-stone-700/50 rounded-full hover:bg-stone-800 hover:border-emerald-500/30 transition-all duration-300 group/ds">
-                <div className="w-6 h-6 bg-emerald-600 rounded-lg flex items-center justify-center transform group-hover/ds:rotate-12 transition-transform duration-300">
-                  <span className="text-white font-bold text-[10px] tracking-tighter">DS</span>
+              <span className="text-white font-bold text-xs tracking-[0.15em] uppercase">Designed By</span>
+              <a href="https://codefons.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 px-4 py-2 bg-stone-800/60 border border-stone-700/50 rounded-full hover:bg-stone-800 hover:border-orange-500/40 hover:shadow-[0_0_12px_rgba(249,115,22,0.15)] transition-all duration-300 cursor-pointer group/cf no-underline">
+                <div className="w-6 h-6 bg-orange-500 rounded-[5px] flex items-center justify-center transform group-hover/cf:rotate-12 transition-transform duration-300">
+                  <span className="text-white font-bold text-[10px] leading-none">&lt;/&gt;</span>
                 </div>
-                <span className="text-stone-200 font-bold text-sm tracking-tight group-hover/ds:text-emerald-400 transition-colors duration-300">DesArt Social</span>
-              </div>
-            </div> 
+                <span className="font-bold text-sm tracking-tight transition-colors duration-300">
+                  <span className="text-stone-400 group-hover/cf:text-white transition-colors duration-300">Code</span><span className="text-orange-500">FONS</span>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </footer>
